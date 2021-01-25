@@ -1,0 +1,62 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+
+$primary: #ffffff; // Thats a sample how you could change a BootStrap variable.
+$secondary: #8c52ff;
+$tertiary: #2db0b0;
+$quaternary: #2db091;
+$quinary: #626262;
+
+body {
+	// font-family: 'Press Start 2P', cursive;
+	font-family: "Orbitron", "Play", "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 1.25;
+}
+
+#wrapper-navbar {
+	.top-header-holder {
+		height: 75px;
+		color: #aaaaaa;
+	}
+	margin-bottom: -150px;
+
+	#main-nav {
+		font-family: "Play", "Roboto", sans-serif;
+		border-top: 2px solid rgba(#2db0b0, 0.5);
+		border-bottom: 2px solid rgba(#2db0b0, 0.5);
+		padding: 0px;
+		background-color: $secondary;
+		.container {
+			.logo-holder {
+				width: 200px;
+			}
+		}
+		ul {
+			flex: 1;
+			justify-content: space-between;
+			li {
+				a {
+					font-weight: 700;
+					font-size: 18px;
+					text-transform: uppercase;
+					padding: 2em 0.5em;
+				}
+				&.current_page_item {
+					a {
+						color: $tertiary;
+						font-weight: 900;
+					}
+				}
+			}
+		}
+	}
+}
+
+.homeBG-banner {
+	height: 400px;
+	background: #000000;
+	background-image: url(./imgs/);
+	background-size: cover;
+}
